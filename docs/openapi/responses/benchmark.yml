@@ -1,0 +1,20 @@
+type: object
+required:
+  - id
+  - title
+  - description
+  - body
+properties:
+  id:
+    type: integer
+    example: 1
+  title:
+    type: string
+    example: Shift loop vs unrolled
+  description:
+    type: string
+    example: "Comparing performance of: Shift loop vs Unrolled Loop"
+  body:
+    type: string
+    example:
+      "html element"
