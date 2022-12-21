@@ -1,0 +1,8 @@
+type: object
+required:
+  - benchmarks
+properties:
+  benchmarks:
+    type: array
+    items: 
+      $ref: "benchmark.yml"

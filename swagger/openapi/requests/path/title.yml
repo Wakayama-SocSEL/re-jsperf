@@ -1,0 +1,5 @@
+in: query
+name: title
+type: string
+example: loop
+description: 検索テキスト

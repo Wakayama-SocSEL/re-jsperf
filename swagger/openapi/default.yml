@@ -1,0 +1,49 @@
+openapi: 3.0.3
+info:
+  title: Re jsPerf API
+  description: |-
+    Re: jsPerfのAPIドキュメントです
+  version: 1.0.0
+externalDocs:
+  description: リポジトリ
+  url: https://github.com/Wakayama-SocSEL/re-jsperf
+tags:
+  - name: search
+    description: タイトルを入力として，MeasureThat.netから検索結果を返す
+  - name: benchmarks
+    description: 基準を満たす類似度のベンチマーク一覧を返す
+paths:
+  /search:
+    get:
+      tags:
+        - search
+      summary:
+        ベンチマーク一覧取得API
+      description:
+        タイトルを入力として，MeasureThat.netから検索結果を返す
+      parameters:
+        - $ref: "requests/path/title.yml"
+      responses:
+        "200":
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: "responses/search.yml"
+  /benchmarks/{id}:
+    get:
+      tags:
+        - benchmarks
+      summary:
+        ベンチマーク内容取得API
+      description:
+        基準を満たす類似度のベンチマーク一覧を返す
+      parameters:
+        - $ref: "requests/path/id.yml"
+      responses:
+        "200":
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: "responses/benchmarks.yml"
