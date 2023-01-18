@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  trailingSlash: true
+  swcMinify: true,
+  trailingSlash: true,
+  sassOptions: {
+    includePaths: [path.join(__dirname, './src/styles')],
+  },
+  distDir: 'build'
 }
 
 module.exports = nextConfig
