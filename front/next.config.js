@@ -8,7 +8,7 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, './src/styles')],
   },
-  assetPrefix: 'https://github.com/Wakayama-SocSEL/re-jsperf/'
+  assetPrefix: 'https://wakayama-socsel.github.io/re-jsperf/'
 }
 
 module.exports = nextConfig
