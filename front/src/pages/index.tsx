@@ -1,3 +1,14 @@
+import { Container } from '@/components/Container'
+import { Header } from '@/components/Header'
+import { SearchForm } from '@/components/SearchForm'
+
 export default function Home() {
-  return <p>Hello, World!</p>
+  return (
+    <>
+      <Header />
+      <Container>
+        <SearchForm />
+      </Container>
+    </>
+  )
 }
