@@ -6,7 +6,7 @@ export const List = ({ data }: Record<'data', SearchType[]>) => {
     <ul className={styles.list}>
       {data.map((item) => (
         <li key={item.id} className={styles.item}>
-          <a href={`/benchmarks/${item.id}`} className={styles.link}>
+          <a href={`/re-jsperf/benchmarks/${item.id}`} className={styles.link}>
             {item.title}
           </a>
           <p className={styles.description}>{item.description}</p>
