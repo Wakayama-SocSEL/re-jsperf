@@ -1,2 +1,10 @@
-export const header: string
-export const title: string
+export type Styles = {
+  header: string
+  title: string
+}
+
+export type ClassNames = keyof Styles
+
+declare const styles: Styles
+
+export default styles

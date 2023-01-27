@@ -1,5 +1,8 @@
 export type Styles = {
-  container: string
+  description: string
+  item: string
+  link: string
+  list: string
 }
 
 export type ClassNames = keyof Styles
