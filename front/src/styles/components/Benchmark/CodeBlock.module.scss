@@ -1,0 +1,19 @@
+.container {
+  font-size: 16px;
+  word-break: break-word;
+  word-wrap: break-word;
+  line-height: 1.7;
+  margin: 1.3rem 0;
+}
+
+.wrapper {
+  font-size: 14px;
+  background-color: #1a2638;
+  line-height: 1.7;
+  color: white;
+  overflow-x: auto;
+  border-radius: .7em;
+  box-shadow: 0 4px 6px -1px #000e1e26;
+  display: flex;
+  font-weight: 400;
+}

@@ -5,6 +5,7 @@ import { setupWorker } from 'msw'
 import { setupServer } from 'msw/node'
 import { handlers } from '@/mock/handlers'
 import 'normalize.css'
+import '@/styles/lib/syntaxHighlight.scss'
 import '@/styles/global.scss'
 
 if (process.env.NODE_ENV === 'development') {
